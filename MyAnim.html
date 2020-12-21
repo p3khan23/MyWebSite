@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script language= "javaScript">
+            function beginANim()
+            {
+               var myDude = document.getElementbyId("dude");
+                var xPos = myDude.style.left;
+                xPos = parseInt(xPos); 
+                xPos -= 5; 
+                
+                if (xPos < 0) // he's off the screen 
+                {
+                    //Set xPos so the character is on the right side of the background 
+                    xPos = 900;
+                    
+                }
+
+                myDude.style.left = xPos; 
+                
+                var timer = setTimeout("beginAnim()", 50); 
+                
+            }
+            
+        </script>
+    </head>
+    <body bgcolor= #A6464EB> 
+        
+        <center>
+            <h1>My Animation <h1>
+                <input type = "button" value = "Start" onClick="beginAnim()"/> </center> 
+                <div id="setting" style="position:absolute; top: 125; left:100"> <img src="images/anim1bkgnd.jpg" width="800"/> 
+                </div>
+                <div id="dude" style="position:absolute; top:350; left: 900"> <img src= "images/walking1.gif" width = "150"/> 
+                    <d/iv>
+                        <div id="dude" style="position:absolute; top:125; left: 900"> <img src="images/curtains.jpg" width = "150" height = "500"/>
+                        </div> 
+                       
+                        </body>
+                    </html> 
