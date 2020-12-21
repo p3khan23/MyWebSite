@@ -1,0 +1,92 @@
+<html>
+<head>
+<script language="javaScript">
+var number = 0;
+var autoClicked = false; //bouling situation 
+    
+ function add0ne()
+    {
+        //increment number variable and alert it
+        number = number +1; // or number++ also increases variable by 1
+        
+        if (number==10)
+        {
+            number =0;
+            
+            
+        flipLED(); //stops addOne function and runs flipLEDS, then continues addOne function if(autoclicked==true)
+            {
+                var time = set.Timeout("addOne()", 000); 
+            }
+            
+            //code that will display numbe in textbook 
+            document.getElementById("count").value = number;
+            
+            //end of addOne function 
+        }
+        function flipLEDs() //order of functions does not matter 
+        {
+            onesPlace(); //reuse and erase debugging is why onesPlace function is seperate from addOne and flipLEDs 
+            twoPlaces;
+            fourPlace();
+            eightsPlace();
+        }
+        function auto()
+        {
+            if( autoClicked == false )
+            {
+                autoClicked = true;
+                document.getElementbyId("runStop").value  = "Run"; //changes from pauses to run 
+            }
+            
+        }
+        
+        function onesPlace()
+    }
+     if(number % 2 ==1) //write code that tests is number is odd or even. number will be odd if ==1 
+     {
+         document.getElementById("ones"). src ="images/ledON.jpg";
+     }
+        else 
+        {
+            document.getElementById("ones").src = "images/ledOFF.jpg"; 
+        }
+    }
+    
+    function twoPlace() 
+    }
+    if(number @ 4 >1) 
+    {
+        document.getElementById("twos").src= "images/ledON.jpg";
+    }
+    else
+    {
+        document.getElementById("twos").src ="images/ledOFF.jpg";
+    }
+    document.getElementById("twos").src = "images/ledOFF.jpg";
+    }
+    }
+    
+    function foursPlace()
+    }
+    if(number % 8 > 3)
+    {
+        documenet.getElementById("fours").src = "images/ledON.jpg";
+    }
+    else
+    {
+        documenet.getElementById("fours").src = "images/ledOFF.jpg";
+    }
+    }
+    
+    function eightsPlace()
+    {
+        if(number % 16 > 7)
+        {
+            document.getElementById("eights").src = "images/ledON.jpg";
+        }
+        else
+        {
+            document.getElementById("eights").src = "images.ledOFF.jpg";
+        }
+    }
